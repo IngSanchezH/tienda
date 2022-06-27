@@ -51,9 +51,8 @@ class HomeController extends Controller
         $direccion->cp = $request->input('cp');
         //return $direccion;
 
-        $dir = $request->input('calle').", ". $request->input('numero').", ". $request->input('colonia')." ".
-                $request->input('ciudad').", ". $request->input('cp').", ".
-                $request->input('municipio').", ". $request->input('estado');
+        $dir = $direccion->calle.", ".  $direccion->numero.", ". $direccion->colonia." ".$direccion->ciudad.", ". $direccion->cp.", ".$direccion->municipio.", ". $direccion->estado;
+
         $apiKey = 'AIzaSyCVH2nGlz9tIuQnw8MyDhLv7Nj-jDoY2d0';
 
         // Change address format
